@@ -1,0 +1,16 @@
+<div class='site-wrapper-inner'>
+    <div class="cover-container">
+      <div><img width='100%' src="assets/images/title.svg" alt="HacKids" /></div>
+
+      <div class='main-options container-fluid'>
+        <div class='row'>
+          <div class='option pd5 col-xs-6 col-sm-4 col-md-4' ng-repeat="subSite in main.subSites">
+            <a href='{{ subSite.url }}'>
+              <img class='img-responsive' src="{{ subSite.image }}" alt="{{ subSite.title }}" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>

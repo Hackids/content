@@ -1,0 +1,85 @@
+body.main {  
+  height: 100%;
+  background-color: #386db3;
+  background-image:url('../assets/images/background.svg');
+  background-position:50% 50%;
+  background-size:cover;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.0);
+
+  .site-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.0);
+            box-shadow: inset 0 0 100px rgba(0,0,0,.0);
+
+    .site-wrapper-inner {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .cover-container {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 5px 10px;
+    }
+
+    .inner {
+      padding: 30px;
+    }
+
+    .main-options {
+      width: 100%;
+      background-color: #FFF;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        margin-bottom: 0;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        padding: 6px 12px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 5px 5px 5px #888888;
+        }
+      }
+
+    }
+
+
+    @media (min-width: 768px) {
+      /* Start the vertical centering */
+      .site-wrapper-inner {
+        vertical-align: middle;
+      }
+      .cover-container {
+        width: 600px; 
+      }
+    }
+
+    @media (min-width: 992px) {
+      .cover-container {
+        width: 700px;
+      }
+    }
+
+  }
+
+
+}
+.pd5{
+  padding: 5px !important;
+}
+
