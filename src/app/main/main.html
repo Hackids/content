@@ -6,7 +6,7 @@
         <div class='row'>
           <div class='option pd5 col-xs-6 col-sm-4 col-md-4' ng-repeat="subSite in main.subSites">
             <a href='{{ subSite.url }}'>
-              <img class='img-responsive' src="{{ subSite.image }}" alt="{{ subSite.title }}" />
+              <img class='img-responsive' ng-src="{{ subSite.image}}" alt="{{ subSite.title }}" />
             </a>
           </div>
 
