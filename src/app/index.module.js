@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular
+  var app = angular
     .module('HacKids', ['ui.router', 'ui.bootstrap']);
 
 
@@ -25,5 +25,10 @@
     });
   }
 
+  app.filter("sanitize", ['$sce', function($sce) {
+    return function(htmlCode){
+      return $sce.trustAsHtml(htmlCode);
+    }
+  }]);
 
 })();

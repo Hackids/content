@@ -1,0 +1,107 @@
+body.anda {
+
+    //background: #EEEEEE url(assets/anda/images/background.png) repeat scroll top center;
+
+    .navbar {
+        margin-bottom: 0px;
+        color: #555555;
+        background-color: #EEEEEE;
+        a {
+            color: #555555;
+        }
+    }
+    .content {
+        overflow-x: hidden;
+
+        .list-articles {
+            box-shadow: none;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+            z-index: 0;
+            background-color: rgba(217, 244, 244, 1);
+            box-shadow: inset 0 0 5px #aaa;
+
+            width: 80%;
+            transition-duration: .3s;
+            &.off {
+                transform: translateX(-90%) !important
+            }
+            &.on {
+                transform: translateX(0) !important;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                width: 50%;
+            }
+            @media (min-width: $screen-md-min) {
+                width: 20%;
+                &.off, &.off {
+                    transform: translateX(0) !important
+                }
+            }
+
+            ul {
+                padding-left: 0px;
+
+            }
+            li {
+                position: relative;
+                display: block;
+                margin-bottom: -1px;
+
+                padding: 5px 0px;
+                border-bottom: 1px solid #e4e4e4;
+                cursor: pointer;
+
+                &.active {
+                    background-color: white;
+                    box-shadow: -5px 0 5px #aaa;
+                }
+            }
+        }
+
+    }
+    
+    .article {
+        padding: 0 10px;
+        z-index: 100;
+        min-height: 100%;
+
+        width: 90%;
+        transition-duration: .3s;
+        &.on{
+            transform: translateX(10%) !important
+        }
+        &.off {
+            transform: translateX(90%) !important;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            &.off {
+                transform: translateX(60%) !important;
+            }
+        }
+        @media (min-width: $screen-md-min) {
+            width: 70%;
+            &.on, &.off{
+                transform: translateX(30%) !important
+            }
+        }
+
+        h1 {
+            padding: 10px 0;
+        }
+
+        .content {
+            padding: 10px 0;
+        }
+
+    }
+    .thumbnail .caption{
+        @media (min-width: $screen-sm-min) {
+            height: 200px;
+            overflow: hidden;
+          }
+      }
+}

@@ -3,17 +3,17 @@
 
   angular
     .module('HacKids')
-    .directive('hackidsNavbar', hackidsNavbar);
+    .directive('hackidsPreview', hackidsPreview);
 
   /** @ngInject */
-  function hackidsNavbar() {
+  function hackidsPreview() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/navbar/navbar.html',
+      templateUrl: 'app/components/preview/preview.html',
       scope: {
-          title: '='
+          article: '='
       },
-      controller: NavbarController,
+      controller: PreviewController,
       controllerAs: 'vm',
       bindToController: true
     };
@@ -21,7 +21,7 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
+    function PreviewController() {
       var vm = this;
     }
   }

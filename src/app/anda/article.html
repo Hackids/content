@@ -1,0 +1,25 @@
+<div class='content'>
+  <div class="list-articles {{andaDetail.showMenu?'on':'off'}}" ng-click='andaDetail.showMenu = !andaDetail.showMenu'>
+    <ul >
+      <li ng-repeat='a in anda.articles' class="{{a.id==andaDetail.article.id?'active':''}}"><a class='btn' href='#/anda/{{a.id}}'>{{a.title}}</a></li>
+    </ul>
+  </div>
+
+  <div class="article {{andaDetail.showMenu?'off':'on'}}" ng-click='andaDetail.showMenu = false'>
+      <h1>{{andaDetail.article.title}}</h1>
+      <div class="embed-responsive embed-responsive-16by9" ng-bind-html="andaDetail.article.media | sanitize">
+      </div>
+      <div class='content' ng-bind-html="andaDetail.article.details | sanitize" > </div>
+
+      <div class="row">
+              <div class="col-xs-6">
+                <p class="text-left"><a>Anterior</a></p>
+              </div>
+              <div class="col-xs-6">
+                <p class="text-right"><a>Siguiente</a></p>
+              </div>
+      </div>
+
+  </div>
+</div>
+

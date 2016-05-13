@@ -1,0 +1,14 @@
+
+  <div class="thumbnail">
+      <a href="#/anda/{{vm.article.id}}">
+        <img ng-src="{{vm.article.thumbnail}}" alt="{{vm.article.title}}">
+      </a>
+      <div class="caption">
+        <a href="#/anda/{{vm.article.id}}">
+        <h3>{{vm.article.title}}</h3>
+        </a>
+        <div ng-bind-html="vm.article.description | sanitize" > </div>
+      </div>
+    </div>
+  </div>
+
