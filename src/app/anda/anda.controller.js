@@ -29,7 +29,9 @@
             'id':'anda-sexual-violence',
             'thumbnail':'assets/anda/images/2.jpg',
             'title':'Anda Sexual Violence',
-            'description':'Sexual violence is not cultural! Sexual violence is a crime. All together for the right to a life free of violence. ANDA, Action Is Born  From Within.'
+            'description':'Sexual violence is not cultural! Sexual violence is a crime. All together for the right to a life free of violence. ANDA, Action Is Born  From Within.',
+            'media':' <iframe src="https://www.youtube.com/embed/Jnx3lr_2lJ4" frameborder="0" allowfullscreen></iframe>',
+            'details':'<p>Sexual violence is not cultural! Sexual violence is a crime. All together for the right to a life free of violence.</p><p>ANDA, Action Is Born  From Within.</p>'
         },
         'testimonio-nancy-gomez1':{
             'id':'testimonio-nancy-gomez1',
