@@ -1,4 +1,13 @@
 {
+  "la-accion-nace-desde-dentro":{
+      "id":"la-accion-nace-desde-dentro",
+      "thumbnail":"content/anda/images/0.jpg",
+      "title":"ANDA - la acción nace desde adentro",
+      "description":"<p>ANDA quiere que hables de paz. <br />¡La paz es un estado en el que todos tenemos que entrar!<p>",
+      "media":"<video controls> <source src='assets/anda/ANDA - Por la Paz.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
+      "details":"<p>ANDA quiere que hables de paz. <br />¡La paz es un estado en el que todos tenemos que entrar!<p>",
+      "date":"2016-02-24"
+  },
   "anda-la-paz-es-nuestra": {
       "id":"anda-la-paz-es-nuestra",
       "thumbnail":"content/anda/images/6.jpg",
@@ -52,15 +61,5 @@
       "media":"<video controls> <source src='content/anda/videos/ANDA - Participacion Politica.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
       "details":"<p>¡La política es de todos! Una sociedad democrática es aquella que permite que todas las formas de pensamiento tengan un espacio.</p>",
       "date":"2016-02-24"
-  },
-  "la-accion-nace-desde-dentro":{
-      "id":"la-accion-nace-desde-dentro",
-      "thumbnail":"content/anda/images/0.jpg",
-      "title":"ANDA - la acción nace desde adentro",
-      "description":"<p>ANDA quiere que hables de paz. <br />¡La paz es un estado en el que todos tenemos que entrar!<p>",
-      "media":"<video controls> <source src='content/anda/videos/ANDA - Por la Paz.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
-      "details":"<p>ANDA quiere que hables de paz. <br />¡La paz es un estado en el que todos tenemos que entrar!<p>",
-      "date":"2016-02-24"
   }
-
 }
