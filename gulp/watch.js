@@ -32,6 +32,14 @@ gulp.task('watch', ['inject'], function () {
       gulp.start('inject-reload');
     }
   });
+  
+  gulp.watch(path.join(conf.paths.src, '/content/**/*.json'), function(event) {
+    if(isOnlyChange(event)) {
+      gulp.start('content-reload');
+    } else {
+      gulp.start('inject-reload');
+    }
+  });
 
   gulp.watch(path.join(conf.paths.src, '/app/**/*.html'), function(event) {
     browserSync.reload(event.path);

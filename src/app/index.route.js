@@ -34,7 +34,7 @@
         url: '/:id',
         templateUrl: 'app/anda/article.html',
         controller: 'AndaArticleController',
-        controllerAs: 'andaDetail',
+        controllerAs: 'andaDetail'
       });
 
     $urlRouterProvider.otherwise('/');

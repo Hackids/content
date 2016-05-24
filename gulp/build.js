@@ -81,11 +81,16 @@ gulp.task('other', function () {
   var fileFilter = $.filter(function (file) {
     return file.stat.isFile();
   });
+  var jsonFilter = $.filter('**/*.json', { restore: true });
+
 
   return gulp.src([
     path.join(conf.paths.src, '/**/*'),
     path.join('!' + conf.paths.src, '/**/*.{html,css,js,scss}')
   ])
+    .pipe(jsonFilter)
+    .pipe($.jsonminify())
+    .pipe(jsonFilter.restore)
     .pipe(fileFilter)
     .pipe(gulp.dest(path.join(conf.paths.dist, '/')));
 });

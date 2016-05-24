@@ -15,10 +15,14 @@ gulp.task('inject-reload', ['inject'], function() {
   browserSync.reload();
 });
 
-gulp.task('inject', ['scripts', 'styles'], function () {
+gulp.task('inject', ['scripts', 'styles', 'content'], function () {
   var injectStyles = gulp.src([
     path.join(conf.paths.tmp, '/serve/app/**/*.css'),
     path.join('!' + conf.paths.tmp, '/serve/app/vendor.css')
+  ], { read: false });
+
+  var injectContent = gulp.src([
+    path.join(conf.paths.tmp, '/serve/content/**/*.json'),
   ], { read: false });
 
   var injectScripts = gulp.src([
@@ -37,6 +41,7 @@ gulp.task('inject', ['scripts', 'styles'], function () {
   return gulp.src(path.join(conf.paths.src, '/*.html'))
     .pipe($.inject(injectStyles, injectOptions))
     .pipe($.inject(injectScripts, injectOptions))
+    .pipe($.inject(injectContent, injectOptions))
     .pipe(wiredep(_.extend({}, conf.wiredep)))
     .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve')));
 });

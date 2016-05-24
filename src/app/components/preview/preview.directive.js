@@ -22,7 +22,6 @@
 
     /** @ngInject */
     function PreviewController() {
-      var vm = this;
     }
   }
 
