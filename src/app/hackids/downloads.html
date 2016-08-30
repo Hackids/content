@@ -1,0 +1,15 @@
+<div class='content'>
+  <div class="row downloads">
+    <div class="col-sm-12">
+      <h1>Descargas</h1>
+    </div>
+    <div class="col-sm-6 col-md-3" ng-repeat="d in downloads.downloads">
+      <div class="thumbnail">
+          <a href="{{d.file}}" target='_black'>
+            <img ng-src="{{d.thumbnail}}" alt="{{download.title}}">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

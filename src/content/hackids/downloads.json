@@ -1,0 +1,23 @@
+{
+  "download1":{
+      "thumbnail":"content/hackids/images/download1.png",
+      "title":"Arduino para windows",
+      "file":"https://www.arduino.cc/en/Main/Donate"
+  },
+  "download2":{
+      "thumbnail":"content/hackids/images/download2.png",
+      "title":"Arduino para linux 32 BITS",
+      "file":"https://www.arduino.cc/en/Main/Donate"
+  },
+  "download3":{
+      "thumbnail":"content/hackids/images/download3.png",
+      "title":"Arduino para linux 64 BITS",
+      "file":"https://www.arduino.cc/en/Main/Donate"
+  },
+  "download4":{
+      "thumbnail":"content/hackids/images/download4.png",
+      "title":"Arduino para MAC",
+      "file":"https://www.arduino.cc/en/Main/Donate"
+  }
+
+}

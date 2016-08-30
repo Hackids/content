@@ -4,7 +4,7 @@
       "thumbnail":"content/anda/images/0.jpg",
       "title":"ANDA - la acción nace desde adentro",
       "description":"<p>ANDA quiere que hables de paz. <br />¡La paz es un estado en el que todos tenemos que entrar!<p>",
-      "media":"<video controls> <source src='assets/anda/ANDA - Por la Paz.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
+      "media":"<video controls> <source src='content/anda/videos/ANDA - Por la Paz.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
       "details":"<p>ANDA quiere que hables de paz. <br />¡La paz es un estado en el que todos tenemos que entrar!<p>",
       "date":"2016-02-24"
   },

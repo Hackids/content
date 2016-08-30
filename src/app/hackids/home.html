@@ -1,0 +1,12 @@
+<div>
+    <hackids-navbar title="'Hackids'" options="true">
+      <li ng-class="{ active: !hackids.$state.is('hackids.downloads') }">
+        <a ui-sref="hackids.list">Projectos</a>
+      </li>
+      <li ng-class="{ active: hackids.$state.is('hackids.downloads') }">
+        <a ui-sref="hackids.downloads">Descargas</a>
+      </li>
+    </hackids-navbar>
+</div>
+
+<div ui-view></div>

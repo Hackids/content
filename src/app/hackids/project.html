@@ -1,0 +1,49 @@
+<div class='content'>
+  <div class="projects {{projectDetail.showMenu?'on':'off'}}" ng-click='projectDetail.showMenu = !projectDetail.showMenu'>
+    <ul >
+      <li ng-repeat='p in hackids.projects' class="{{p.id==projectDetail.project.id?'active':''}}"><a class='btn' ui-sref="^.detail({id: p.id})">{{p.title}}</a></li>
+    </ul>
+  </div>
+
+  <div class="project {{projectDetail.showMenu?'off':'on'}}" ng-click='projectDetail.showMenu = false'>
+      <h1>{{projectDetail.project.title}}</h1>
+      <div class="roww">
+        <div class="pull-right">
+          <a type="button" href="{{projectDetail.project.cartilla}}" class="btn btn-info plunk-btn" target="_blank"><i class="glyphicon glyphicon-edit"></i> Cartilla</a>
+        </div>
+
+        <uib-tabset active="active">
+          <uib-tab index="0">
+            <uib-tab-heading>
+              <i class="glyphicon glyphicon-film"></i> Tutorial
+            </uib-tab-heading>
+
+            <div class="embed-responsive embed-responsive-16by9" ng-bind-html="projectDetail.project.media | sanitize">
+            </div>
+          </uib-tab>
+          <uib-tab index="1">
+            <uib-tab-heading>
+              Mapa del circuito
+            </uib-tab-heading>
+
+            <img class="mapa" ng-src="{{projectDetail.project.mapa}}" alt="{{vm.article.title}}">
+          </uib-tab>
+          <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
+            {{tab.content}}
+          </uib-tab>
+        </uib-tabset>
+      </div>
+
+      <div class='content' ng-bind-html="projectDetail.project.details | sanitize" > </div>
+
+      <div class="row">
+              <div class="col-xs-6">
+                <p class="text-left"><a ng-click='projectDetail.prev()'>Anterior</a></p>
+              </div>
+              <div class="col-xs-6">
+                <p class="text-right"><a ng-click='projectDetail.next()'>Siguiente</a></p>
+              </div>
+      </div>
+
+  </div>
+</div>

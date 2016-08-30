@@ -10,8 +10,10 @@
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
+      transclude: true,
       scope: {
-          title: '='
+          title: '=',
+          options: '='
       },
       controller: NavbarController,
       controllerAs: 'vm',

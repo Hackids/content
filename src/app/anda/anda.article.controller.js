@@ -16,7 +16,11 @@
 
     vm.next = function(){
       var found = false;
+      var first = false;
       for (var id in $scope.$parent.anda.articles) {
+          if(!first){
+            first = id;
+          }
           if(found){
             $state.go('^.detail',{'id':id});
             return;
@@ -25,6 +29,7 @@
             found = true;
           }
       }
+      $state.go('^.detail',{'id':first});
     }
     vm.prev = function(){
       var found = false;
@@ -37,6 +42,7 @@
         }
         found = id;
       }
+      $state.go('^.detail',{'id':id});
     }
   }
 })();
