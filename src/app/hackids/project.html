@@ -7,7 +7,7 @@
 
   <div class="project {{projectDetail.showMenu?'off':'on'}}" ng-click='projectDetail.showMenu = false'>
       <h1>{{projectDetail.project.title}}</h1>
-      <div class="roww">
+      <div>
         <div class="pull-right">
           <a type="button" href="{{projectDetail.project.cartilla}}" class="btn btn-info plunk-btn" target="_blank"><i class="glyphicon glyphicon-edit"></i> Cartilla</a>
         </div>
@@ -23,7 +23,7 @@
           </uib-tab>
           <uib-tab index="1">
             <uib-tab-heading>
-              Mapa del circuito
+              Circuito
             </uib-tab-heading>
 
             <img class="mapa" ng-src="{{projectDetail.project.mapa}}" alt="{{vm.article.title}}">

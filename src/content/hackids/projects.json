@@ -7,7 +7,7 @@
       "media":"<video controls> <source src='content/hackids/videos/ajedrezled.mp4' type='video/mp4'>Your browser does not support the video tag.</video>",
       "details":"<p>En este proyecto vamos a crear un dispositivo con el que podrás formar cualquier mensaje que quieras, crear juegos e incluso unirte a tus amigos a través de mensajes de luz. Con la ayuda de un programa vamos a órdenar a una matriz LED, una pantalla de 8x8, que muestre una serie de caracteres que aparecerán de acuerdo al tiempo que tú determines. Pero, para llevar a cabo este proyecto se necesita de una librería que vamos a cargar al programa. <p>",
       "mapa":"content/hackids/images/ajedrezled-480x382.jpg",
-      "cartilla":"content/hackids/cartillas/ajedrezled1.pdf"
+      "cartilla":"content/hackids/cartillas/ajedrezled.pdf"
     },
     "murcielago":{
         "id":"murcielago",
